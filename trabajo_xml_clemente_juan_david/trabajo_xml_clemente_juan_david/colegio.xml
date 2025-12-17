@@ -4,96 +4,100 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <instituto>
         <cursos>
-            <curso id="1">
+            <curso id="C1">
                 <nombre>DAM</nombre>
 
                 <profesores>
 
-                    <profesor id="1">
+                    <profesor id="P1">
                         <nombre>Aitor</nombre>
                         <edad>30</edad>
                     </profesor>
 
-                    <profesor id="2">
+                    <profesor id="P2">
                         <nombre>Daniel</nombre>
                         <edad>29</edad>
                     </profesor>
 
-                    <profesor id="3">
+                    <profesor id="P3">
                         <nombre>Nuria</nombre>
                         <edad>28</edad>
                     </profesor>
 
-                    <profesor id="4">
+                    <profesor id="P4">
                         <nombre>Roberto</nombre>
                         <edad>27</edad>
                     </profesor>
 
                 </profesores>
 
-                <alumno id="1">
-                    <nombre>Javier</nombre>
-                    <edad>19</edad>
-                </alumno>
+                <alumnos>
+                    <alumno id="A1">
+                        <nombre>Javier</nombre>
+                        <edad>19</edad>
+                    </alumno>
 
-                <alumno id="2">
-                    <nombre>Juanda</nombre>
-                    <edad>19</edad>
-                </alumno>
+                    <alumno id="A2">
+                        <nombre>Juanda</nombre>
+                        <edad>19</edad>
+                    </alumno>
 
-                <alumno id="3">
-                    <nombre>Sergio</nombre>
-                    <edad>32</edad>
-                </alumno>
+                    <alumno id="A3">
+                        <nombre>Sergio</nombre>
+                        <edad>32</edad>
+                    </alumno>
 
-                <alumno id="4">
-                    <nombre>Ivan</nombre>
-                    <edad>18</edad>
-                </alumno>
+                    <alumno id="A4">
+                        <nombre>Ivan</nombre>
+                        <edad>18</edad>
+                    </alumno>
 
-                <alumno id="5">
-                    <nombre>Jean Pierre</nombre>
-                    <edad>18</edad>
-                </alumno>
+                    <alumno id="A5">
+                        <nombre>Jean Pierre</nombre>
+                        <edad>18</edad>
+                    </alumno>
 
-                <alumno id="6">
-                    <nombre>Omar</nombre>
-                    <edad>22</edad>
-                </alumno>
+                    <alumno id="A6">
+                        <nombre>Omar</nombre>
+                        <edad>22</edad>
+                    </alumno>
+                </alumnos>
                 
             </curso>
-            <curso id="2">
+            <curso id="C2">
                 
                 <nombre>ASIR</nombre>
 
                 <profesores>
 
-                    <profesor id="5">
+                    <profesor id="P5">
                         <nombre>Maria</nombre>
                         <edad>31</edad>
                     </profesor>
 
-                    <profesor id="6">
+                    <profesor id="P6">
                         <nombre>Lucia</nombre>
                         <edad>26</edad>
                     </profesor>
 
                 </profesores>
 
-                <alumno id="7">
-                    <nombre>Carlos</nombre>
-                    <edad>20</edad>
-                </alumno>
+                <alumnos>
+                    <alumno id="A7">
+                        <nombre>Carlos</nombre>
+                        <edad>20</edad>
+                    </alumno>
 
-                <alumno id="8">
-                    <nombre>Fernando</nombre>
-                    <edad>21</edad>
-                </alumno>
+                    <alumno id="A8">
+                        <nombre>Fernando</nombre>
+                        <edad>21</edad>
+                    </alumno>
 
-                <alumno id="9">
-                    <nombre>Andres</nombre>
-                    <edad>23</edad>
-                </alumno>
+                    <alumno id="A9">
+                        <nombre>Andres</nombre>
+                        <edad>23</edad>
+                    </alumno>
+                </alumnos>
             </curso>
         </cursos>
     </instituto>
