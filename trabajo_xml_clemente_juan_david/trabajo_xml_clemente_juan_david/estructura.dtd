@@ -1,0 +1,6 @@
+<!ELEMENT instituto (curso+)>
+<!ELEMENT curso (nombre, alumno+)>
+<!ELEMENT alumno id CDATA #REQUIRED>
+<!ELEMENT alumno (nombre, edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>

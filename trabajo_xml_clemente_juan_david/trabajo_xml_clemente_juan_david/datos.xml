@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instituto SYSTEM "instituto.dtd">
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <instituto>
+        <curso>
+            <nombre>DAM</nombre>
+            <alumno id="1">
+                <nombre>Javier</nombre>
+                <edad>19</nombre>
+            </alumno>
+            <nombre>DAW</nombre>
+            <alumno id="2">
+                <nombre>JUAN DAVID</nombre>
+                <edad>19</nombre>
+            </alumno>
+            <nombre>DAM</nombre>
+            <alumno id="3">
+                <nombre>Daniel</nombre>
+                <edad>19</nombre>
+            </alumno>
+            <nombre>DAM</nombre>
+            <alumno id="4">
+                <nombre>Carlos</nombre>
+                <edad>20</nombre>
+            </alumno>
+            <nombre>DAM</nombre>
+            <alumno id="5">
+                <nombre>Samuel</nombre>
+                <edad>21</nombre>
+            </alumno>
+            <nombre>DAW</nombre>
+            <alumno id="6">
+                <nombre>Antonio</nombre>
+                <edad>18</nombre>
+            </alumno>
+            <nombre>DAW</nombre>
+            <alumno id="7">
+                <nombre>Pablo</nombre>
+                <edad>21</nombre>
+            </alumno>
+            <nombre>DAW</nombre>
+            <alumno id="8">
+                <nombre>JUAN DAVID</nombre>
+                <edad>19</nombre>
+            </alumno>
+            <nombre>DAW</nombre>
+            <alumno id="9">
+                <nombre>Javier</nombre>
+                <edad>19</nombre>
+            </alumno>
+            <nombre>DAW</nombre>
+            <alumno id="10">
+                <nombre>Bartolome</nombre>
+                <edad>22</nombre>
+            </alumno>
+        </curso>
+    </instituto>
+</xs:schema>
