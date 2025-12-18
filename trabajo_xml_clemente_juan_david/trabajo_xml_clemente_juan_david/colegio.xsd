@@ -4,6 +4,37 @@
     <xs:element name="instituto">
         <xs:complexType>
             <xs:sequence>
+                <xs:element name="secretaria">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="empleado" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="edad" type="xs:integer"/>
+                                        <xs:element name="dni" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="profesores">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="profesor" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="edad" type="xs:integer"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                 <xs:element name="cursos">
                     <xs:complexType>
                         <xs:sequence>
@@ -11,21 +42,6 @@
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nombre" type="xs:string"/>
-                                        <xs:element name="profesores">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="profesor" maxOccurs="unbounded">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="nombre" type="xs:string"/>
-                                                                <xs:element name="edad" type="xs:integer"/>
-                                                            </xs:sequence>
-                                                            <xs:attribute name="id" type="xs:ID" use="required"/>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
                                         <xs:element name="alumnos">
                                             <xs:complexType>
                                                 <xs:sequence>

@@ -10,6 +10,6 @@
 <!ELEMENT profesores (profesor+)>
 <!ELEMENT profesor (nombre, edad)>
 <!ATTLIST profesor id CDATA #REQUIRED>
-<!ELEMENT secretaria (nombre, telefono, email)>
-<!ELEMENT telefono (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
+<!ELEMENT secretaria (nombre, edad, dni)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
