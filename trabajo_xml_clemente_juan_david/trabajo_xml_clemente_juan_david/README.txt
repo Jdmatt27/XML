@@ -19,11 +19,15 @@ Hemos elegido la extructura de un colegio con la respectiva distribucion de este
 
 En el archivo XML hemos asignado como etiqueta raiz la etiqueta <instituto>, en la cual se especificara abajo como sera la organizacion de las diferentes etiquetas:
 
-- <cursos> (la cual va a contener las 2 siguientes)
+-<secretaria> (Es una de las etiquetas principales donde contendran subetiquetas que te diran que es cada apartado)
 
-- <curso> (la cual se identificara con un id para diferenciar los diferentes cursos que tenga cada apartado. Va a contener los siguientes apartados)
+-<empleado> (en esta etiqueta estaran subetiquetas para poder identificar a los empleados junto al id)
 
 - <nombre> (esta etiqueta se usara para agregar texto indicando diferentes cosas)
+
+- <edad> (esta etiqueta solo contendra un numero)
+
+- <dni> (Esta etiqueta contendra un string representativo como el dni)
 
 - <profesores> (esta etiqueta contendra las siguientes que se escribiran acontinuacion)
 
@@ -31,7 +35,13 @@ En el archivo XML hemos asignado como etiqueta raiz la etiqueta <instituto>, en 
 
 - <nombre> 
 
-- <edad> (esta etiqueta solo contendra un numero)
+- <edad>
+
+- <cursos>
+
+- <curso> (la cual se identificara con un id para diferenciar los diferentes cursos que tenga cada apartado. Va a contener los siguientes apartados)
+
+- <nombre> (esta etiqueta se usara para agregar texto indicando diferentes cosas)
 
 - <alumnos> (esta etiqueta servira para poder diferenciar el apartado de los alumnos)
 
