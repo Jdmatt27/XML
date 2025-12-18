@@ -18,7 +18,7 @@
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="nombre" type="xs:string"/>
-                                                                <xs:element name="edad" type="xs:Integer"/>
+                                                                <xs:element name="edad" type="xs:integer"/>
                                                             </xs:sequence>
                                                             <xs:attribute name="id" type="xs:ID" use="required"/>
                                                         </xs:complexType>
@@ -33,7 +33,7 @@
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="nombre" type="xs:string"/>
-                                                                <xs:element name="edad" type="xs:Integer"/>
+                                                                <xs:element name="edad" type="xs:integer"/>
                                                             </xs:sequence>
                                                             <xs:attribute name="id" type="xs:ID" use="required"/>
                                                         </xs:complexType>

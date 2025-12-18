@@ -41,10 +41,66 @@ En el archivo XML hemos asignado como etiqueta raiz la etiqueta <instituto>, en 
 
 - <edad>
 
+3. QUE VALIDA EL DTD
 
+- <instituto> valida que contenga exactamente un elemento <cursos> como hijo directo.
+    No permite otros elementos fuera de <cursos>.
 
+- <cursos> debe contener uno o más elementos <curso> (+ significa al menos uno).
+    No puede contener texto directamente ni otros elementos.
 
+- <curso> debe contener en orden:
+    1. <nombre>
+    2. <profesores>
+    3. <alumnos>
+    Tiene que tener un atributo obligatorio id, que puede contener cualquier texto (tipo CDATA).
 
+- <nombre> solo puede contener texto.
+    #PCDATA = “parsed character data” (datos de texto).
+
+- <profesores> debe contener uno o más <profesor>.
+
+- <profesor> tiene:
+    1. <nombre>
+    2. <edad>
+    Tiene que tener un atributo obligatorio id.
+
+- <alumnos> debe contener uno o más <alumno>.
+
+- <alumno> tiene:
+    1. <nombre>
+    2. <edad>
+    Tiene que tener un atributo obligatorio id.
+
+- <edad> solo puede tener numero no letras.
+
+4. QUE VALIDA EL XSD
+
+- Define que <instituto> es el elemento raíz.
+Debe contener exactamente un <cursos> como hijo directo.
+No permite texto directo ni otros elementos fuera de <cursos>.
+
+- <cursos> debe contener uno o más <curso> (maxOccurs="unbounded" = ilimitados).
+
+- Cada <curso> tiene:
+    1. <nombre> (string)
+    2. <profesores>
+    3. <alumnos>
+<curso> también tiene un atributo obligatorio id de tipo xs:ID.
+
+- <profesores> puede contener varios <profesor>.
+
+- Cada <profesor> debe tener:
+    1. <nombre> → texto (xs:string)
+    2. <edad> → número entero (xs:integer)
+<profesor> debe tener atributo id obligatorio y único (xs:ID).
+
+- <alumnos> puede contener varios <alumno>.
+
+- Cada <alumno> debe tener:
+    1. <nombre> → texto (xs:string)
+    2. <edad> → número entero (xs:integer)
+<alumno> tiene atributo id obligatorio y único (xs:ID).
 
 5. DIFICULTADES ENCONTRADAS DURANTE EL DESARROLLO
  
