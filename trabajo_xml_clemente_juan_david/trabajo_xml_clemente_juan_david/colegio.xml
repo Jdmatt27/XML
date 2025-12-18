@@ -2,33 +2,59 @@
 
 <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="colegio.xsd">
     <instituto>
+
+        <secretaria>
+            <empleado id="E1">
+                <nombre>Laura</nombre>
+                <edad>35</edad>
+                <dni>12345678A</dni>
+            </empleado>
+            <empleado id="E2">
+                <nombre>Pedro</nombre>
+                <edad>40</edad>
+                <dni>87654321B</dni>
+            </empleado>
+        </secretaria>
+
+        <profesores>
+
+            <profesor id="P1">
+                <nombre>Aitor</nombre>
+                <edad>30</edad>
+            </profesor>
+
+            <profesor id="P2">
+                <nombre>Daniel</nombre>
+                <edad>29</edad>
+            </profesor>
+
+            <profesor id="P3">
+                <nombre>Nuria</nombre>
+                <edad>28</edad>
+            </profesor>
+
+            <profesor id="P4">
+                <nombre>Roberto</nombre>
+                <edad>27</edad>
+            </profesor>
+
+            <profesor id="P5">
+                <nombre>Maria</nombre>
+                <edad>31</edad>
+            </profesor>
+
+            <profesor id="P6">
+                <nombre>Lucia</nombre>
+                <edad>26</edad>
+            </profesor>
+
+        </profesores>
+
         <cursos>
             <curso id="C1">
                 <nombre>DAM</nombre>
 
-                <profesores>
 
-                    <profesor id="P1">
-                        <nombre>Aitor</nombre>
-                        <edad>30</edad>
-                    </profesor>
-
-                    <profesor id="P2">
-                        <nombre>Daniel</nombre>
-                        <edad>29</edad>
-                    </profesor>
-
-                    <profesor id="P3">
-                        <nombre>Nuria</nombre>
-                        <edad>28</edad>
-                    </profesor>
-
-                    <profesor id="P4">
-                        <nombre>Roberto</nombre>
-                        <edad>27</edad>
-                    </profesor>
-
-                </profesores>
 
                 <alumnos>
                     <alumno id="A1">
@@ -67,19 +93,6 @@
                 
                 <nombre>ASIR</nombre>
 
-                <profesores>
-
-                    <profesor id="P5">
-                        <nombre>Maria</nombre>
-                        <edad>31</edad>
-                    </profesor>
-
-                    <profesor id="P6">
-                        <nombre>Lucia</nombre>
-                        <edad>26</edad>
-                    </profesor>
-
-                </profesores>
 
                 <alumnos>
                     <alumno id="A7">
