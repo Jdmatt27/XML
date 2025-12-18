@@ -1,9 +1,9 @@
 El archivo README.txt debe contener: 
-1. Contexto elegido 
-2. Explicación breve de la estructura del XML 
-3. Qué valida el DTD 
-4. Qué valida el XSD 
-5. Dificultades encontradas durante el desarrollo
+1. Contexto elegido JUANDA
+2. Explicación breve de la estructura del XML JUANDA
+3. Qué valida el DTD JAVI
+4. Qué valida el XSD JAVI
+5. Dificultades encontradas durante el desarrollo JUANDA
 
 
 
