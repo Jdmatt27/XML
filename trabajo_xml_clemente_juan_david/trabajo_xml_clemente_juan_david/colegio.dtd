@@ -1,12 +1,15 @@
-<!ELEMENT instituto (cursos)>
+<!ELEMENT instituto (cursos, profesores, secretaria)>
 <!ELEMENT cursos (curso+)>
-<!ELEMENT curso (nombre, profesores, alumnos)>
+<!ELEMENT curso (nombre, alumnos)>
 <!ATTLIST curso id CDATA #REQUIRED>
 <!ELEMENT nombre (#PCDATA)>
-<!ELEMENT profesores (profesor+)>
-<!ELEMENT profesor (nombre, edad)>
-<!ATTLIST profesor id CDATA #REQUIRED>
 <!ELEMENT alumnos (alumno+)>
 <!ELEMENT alumno (nombre, edad)>
 <!ATTLIST alumno id CDATA #REQUIRED>
 <!ELEMENT edad (#PCDATA)>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (nombre, edad)>
+<!ATTLIST profesor id CDATA #REQUIRED>
+<!ELEMENT secretaria (nombre, telefono, email)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
