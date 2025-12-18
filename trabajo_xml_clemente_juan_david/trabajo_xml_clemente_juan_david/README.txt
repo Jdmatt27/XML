@@ -97,6 +97,8 @@ No permite texto directo ni otros elementos fuera de <cursos>.
     3. <dni> --> texto (xs:string)
 <empleado> tiene un atributo obligatorio id de tipo xs:ID.
 
+- <profesores> puede contener varios <profesor>.
+
 - <profesor> debe tener:
     1. <nombre> --> texto (xs:string)
     2. <edad> --> número entero (xs:integer)
@@ -109,9 +111,6 @@ No permite texto directo ni otros elementos fuera de <cursos>.
     2. <profesores>
     3. <alumnos>
 <curso> también tiene un atributo obligatorio id de tipo xs:ID.
-
-- <profesores> puede contener varios <profesor>.
-
 
 - <alumnos> puede contener varios <alumno>.
 
