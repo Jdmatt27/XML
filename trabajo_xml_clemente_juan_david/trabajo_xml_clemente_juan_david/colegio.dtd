@@ -1,6 +1,12 @@
-<!ELEMENT instituto (curso+)>
-<!ELEMENT curso (nombre, alumno+)>
-<!ELEMENT alumno id CDATA #REQUIRED>
-<!ELEMENT alumno (nombre, edad)>
+<!ELEMENT instituto (cursos)>
+<!ELEMENT cursos (curso+)>
+<!ELEMENT curso (nombre, profesores, alumnos)>
+<!ATTLIST curso id CDATA #REQUIRED>
 <!ELEMENT nombre (#PCDATA)>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (nombre, edad)>
+<!ATTLIST profesor id CDATA #REQUIRED>
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre, edad)>
+<!ATTLIST alumno id CDATA #REQUIRED>
 <!ELEMENT edad (#PCDATA)>
