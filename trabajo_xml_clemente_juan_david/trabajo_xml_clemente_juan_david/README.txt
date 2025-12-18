@@ -43,7 +43,8 @@ En el archivo XML hemos asignado como etiqueta raiz la etiqueta <instituto>, en 
 
 3. QUE VALIDA EL DTD
 
-- <instituto> valida que contenga exactamente un elemento <cursos> como hijo directo.
+- <instituto> valida que contenga exactamente tres elementos principales como hijos directos:
+    <cursos>, <profesores> y <secretaria>.
     No permite otros elementos fuera de <cursos>.
 
 - <cursos> debe contener uno o más elementos <curso> (+ significa al menos uno).
@@ -58,13 +59,6 @@ En el archivo XML hemos asignado como etiqueta raiz la etiqueta <instituto>, en 
 - <nombre> solo puede contener texto.
     #PCDATA = “parsed character data” (datos de texto).
 
-- <profesores> debe contener uno o más <profesor>.
-
-- <profesor> tiene:
-    1. <nombre>
-    2. <edad>
-    Tiene que tener un atributo obligatorio id.
-
 - <alumnos> debe contener uno o más <alumno>.
 
 - <alumno> tiene:
@@ -73,6 +67,21 @@ En el archivo XML hemos asignado como etiqueta raiz la etiqueta <instituto>, en 
     Tiene que tener un atributo obligatorio id.
 
 - <edad> solo puede tener numero no letras.
+
+- <profesores> debe contener uno o más <profesor>.
+
+- <profesor> tiene:
+    1. <nombre>
+    2. <edad>
+    Tiene que tener un atributo obligatorio id.
+
+- <secretaria> debe contener uno o más <empleado>.
+
+- <empleado> tiene:
+    1. <nombre>
+    2. <telefono>
+    3. <email>
+    Cada uno solo puede contener texto.
 
 4. QUE VALIDA EL XSD
 
